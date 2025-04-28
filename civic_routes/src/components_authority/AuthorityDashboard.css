@@ -1,0 +1,263 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  .dashboard-container {
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .nav-btn {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #1565c0;
+  }
+  
+
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  .card-content {
+    padding: 1.2rem;
+  }
+  
+  .card-red   { border-left: 5px solid #e53935; }
+  .card-orange{ border-left: 5px solid #fb8c00; }
+  .card-yellow{ border-left: 5px solid #fdd835; }
+  
+
+  .label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    margin-top: 0.6rem;
+  }
+  
+  .label-red    { background-color: #e53935; color: white; }
+  .label-orange { background-color: #fb8c00; color: white; }
+  .label-yellow { background-color: #fdd835; color: #333; }
+  
+
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* =====================
+     Buttons
+  ===================== */
+  .button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  
+  .button.primary {
+    background-color: #388e3c;
+    color: white;
+  }
+  .button.primary:hover {
+    background-color: #2e7d32;
+  }
+  
+  .button.secondary {
+    background-color: #fbc02d;
+    color: #333;
+  }
+  .button.secondary:hover {
+    background-color: #f9a825;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+  
+  /* New Announcement Form*/
+  .card .section-title {
+    text-align: left;
+  }
+  
+  .card textarea,
+  .card input,
+  .card select {
+    font-family: inherit;
+  }
+  
+  /*Issues Page*/
+  .issue-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-button {
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    background-color: #e2e8f0;
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    background-color: #cbd5e0;
+  }
+  
+  .tab-button.active {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .issue-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /*  Confirmation Popup*/
+  .popup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 90%;
+    width: 90%;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  /* =====================
+     Footer
+  ===================== */
+  .footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 2rem;
+  }
+  
+  /* =====================
+     Responsive Styles (Tablet & Desktop)
+  ===================== */
+  @media (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .button-group {
+      flex-direction: row;
+    }
+  
+    .issue-tabs {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .section-title {
+      font-size: 1.6rem;
+    }
+  
+    
+    .card-content {
+      padding: 1rem;
+      gap: 1rem; /* Adds consistent space between each element */
+    }
+    
+    .card-content .input,
+    .card-content .textarea,
+    .card-content select {
+      width: 100%;
+      
+      box-sizing: border-box;
+      margin: .5rem; /* Remove any inherited margins */
+    }
+}

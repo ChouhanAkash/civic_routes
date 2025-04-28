@@ -1,0 +1,86 @@
+/* Announcements.css */
+
+/* General Body and Container Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+  }
+  
+  /* Authority Grid (for arranging the cards in a grid) */
+  .authority-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Styling the individual announcement cards */
+  .authority-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .authority-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Header Styling */
+  .authority-card .area {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .authority-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .authority-card strong {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Label Styling */
+  .announcement-label {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Label Colors */
+  .label-red {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .label-orange {
+    background-color: #ff9e3e;
+    color: white;
+  }
+  
+  .label-yellow {
+    background-color: #ffd700;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .authority-grid {
+      grid-template-columns: 1fr;
+    }
+  }

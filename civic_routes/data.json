@@ -1,0 +1,48 @@
+{
+    "localIssues": [
+      {
+        "id": 1,
+        "type": "water",
+        "detail": "There is a leak in the main pipeline near Community Park.",
+        "location": "Community Park, Ahmedabad",
+        "image": "https://example.com/water_issue.jpg",
+        "status": "open"
+      },
+      {
+        "id": 2,
+        "type": "garbage",
+        "detail": "Garbage not collected for the last 5 days.",
+        "location": "Gulbai Tekra, Ahmedabad",
+        "image": "https://example.com/garbage.jpg",
+        "status": "open"
+      },
+      {
+        "id": 3,
+        "type": "road",
+        "detail": "Huge potholes causing traffic near Shyamal Cross Road.",
+        "location": "Shyamal Cross Road, Ahmedabad",
+        "image": "https://example.com/pothole.jpg",
+        "status": "inprogress"
+      }
+    ],
+    "authorityUpdates": [
+      {
+        "id": 1,
+        "details": "Water maintenance work scheduled on April 15th.",
+        "area": "Satellite",
+        "announcedBy": "Ahmedabad Water Department"
+      },
+      {
+        "id": 2,
+        "details": "Special garbage collection drive on April 12th.",
+        "area": "Vastrapur",
+        "announcedBy": "AMC Sanitation Team"
+      },
+      {
+        "id": 3,
+        "details": "Road repair operations starting this week.",
+        "area": "Maninagar",
+        "announcedBy": "Road Works Authority"
+      }
+    ]
+  }
